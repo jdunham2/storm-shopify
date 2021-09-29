@@ -1,0 +1,536 @@
+{
+  "sections": {
+    "1631488229db0b6bb2": {
+      "type": "section-video",
+      "settings": {
+        "video_link_bg": "",
+        "video_link": "",
+        "image": "shopify:\/\/shop_images\/STORM_copy.jpg",
+        "bg_position": "center-center",
+        "height": "screen-height-three-quarters",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "title": "Taking the Industry by Storm!",
+        "description": "Tell your brand's story through images.",
+        "flex_align": "align--bottom-center",
+        "text_color": "text-dark",
+        "transparent": true,
+        "link_text": "View products",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "hero__btn btn btn--large btn--outline caps"
+      }
+    },
+    "slideshow": {
+      "type": "section-slideshow",
+      "disabled": true,
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Broadcast theme",
+            "description": "A full featured Shopify theme built for modern commerce",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "View products",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Broadcast theme",
+            "description": "It's like your last theme, except it's faster and better",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "View products",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "slideshow-1"
+      ],
+      "settings": {
+        "height": "screen-height-two-thirds",
+        "transition": "slide",
+        "arrows_style": false,
+        "dots_style": "line",
+        "autoplay": false,
+        "autoplay_speed": 8
+      }
+    },
+    "featured-collection": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Best Sellers",
+        "description": "",
+        "text_alignment": "center",
+        "link_text": "",
+        "link_url": "",
+        "button_color": "btn--black",
+        "button_style": "hero__btn btn btn--large btn--outline caps",
+        "featured_collection": "frontpage",
+        "grid": 3,
+        "rows": 1,
+        "enable_reviews": false,
+        "layout_mobile": "carousel"
+      }
+    },
+    "rich-text": {
+      "type": "section-rich-text",
+      "settings": {
+        "subheading": "Time is money",
+        "title": "Built for speed",
+        "text": "<p>Broadcast was built from the ground up to take advantage of modern development techniques that make your site run as fast as possible.  Using progressive technique like image lazy-loading, code splitting, and preloading, Broadcast is the fast and nimble platform your store needs to level up.  Customers are not patient, and you should not be settling for less.<\/p>",
+        "text_size": 2,
+        "text_columns": 1,
+        "align_text": "text-center",
+        "button_text": "Ready set go",
+        "button_url": "",
+        "button_color": "btn--neutral",
+        "button_style": "hero__btn btn btn--large btn--outline caps",
+        "height": "margin--medium",
+        "width": "wrapper",
+        "text_color": "text-dark",
+        "bg_color": "#ffffff"
+      }
+    },
+    "image-with-text": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-left",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "",
+            "link": "\/collections\/all",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "subheading": "Delete your apps",
+            "title": "Broadcast has that feature",
+            "text": "<p>Upsells, promos, shipping info in the cart<\/p>",
+            "text_size": 2,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "text_color": "text-dark",
+            "bg_color": "#ffffff",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "text"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "padding": true,
+        "borders": false,
+        "wrapper": false
+      }
+    },
+    "product-with-image": {
+      "type": "section-custom-content",
+      "blocks": {
+        "product": {
+          "type": "product",
+          "settings": {
+            "title": "Sell with style",
+            "product": "storm-tsunami",
+            "text_color": "text-dark",
+            "bg_color": "#ffffff"
+          }
+        },
+        "image": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Commerce first",
+            "description": "Focus on your products with innovative sections focused on selling",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "",
+            "link": "\/collections\/all",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "product",
+        "image"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "padding": true,
+        "borders": false,
+        "wrapper": false
+      }
+    },
+    "tabs": {
+      "type": "section-tab-collections",
+      "disabled": true,
+      "blocks": {
+        "tabs-0": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "",
+            "show_image": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View products",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        },
+        "tabs-1": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "",
+            "show_image": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View products",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "tabs-0",
+        "tabs-1"
+      ],
+      "settings": {
+        "title": "",
+        "enable_reviews": false
+      }
+    },
+    "1631488884ef58f72a": {
+      "type": "text-promo",
+      "blocks": {
+        "1631488884ef58f72a-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Text promo"
+          }
+        },
+        "1631488884ef58f72a-1": {
+          "type": "text",
+          "settings": {
+            "content": "Advertise a promotion or a sale"
+          }
+        },
+        "1631488884ef58f72a-2": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop now",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "caps--large"
+          }
+        }
+      },
+      "block_order": [
+        "1631488884ef58f72a-0",
+        "1631488884ef58f72a-1",
+        "1631488884ef58f72a-2"
+      ],
+      "settings": {
+        "border": true,
+        "bg_color": "#f7f7f7",
+        "text_color": "text-dark",
+        "width": "wrapper--full",
+        "bg_position": "center-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000"
+      }
+    },
+    "lookbook": {
+      "type": "section-look",
+      "blocks": {
+        "lookbook-0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "position_x": 18,
+            "position_y": 50
+          }
+        },
+        "lookbook-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "position_x": 41,
+            "position_y": 7
+          }
+        }
+      },
+      "block_order": [
+        "lookbook-0",
+        "lookbook-1"
+      ],
+      "settings": {
+        "bg_position": "left-center",
+        "title": "Shop the look",
+        "section_bg": "#fafafa",
+        "dot_color": "#ffffff"
+      }
+    },
+    "hero": {
+      "type": "section-hero",
+      "disabled": true,
+      "settings": {
+        "bg_position": "center-center",
+        "height": "screen-height-three-quarters",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "title": "Broadcast theme",
+        "description": "Modern commerce built for speed",
+        "flex_align": "align--middle-left",
+        "text_color": "text-dark",
+        "transparent": false,
+        "link_text": "View products",
+        "link": "",
+        "button_color": "btn--black",
+        "button_style": "hero__btn btn btn--input caps"
+      }
+    },
+    "logos": {
+      "type": "section-logo-list",
+      "disabled": true,
+      "blocks": {
+        "logos-0": {
+          "type": "logo-item",
+          "settings": {
+            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
+            "logo_width": 100
+          }
+        },
+        "logos-1": {
+          "type": "logo-item",
+          "settings": {
+            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
+            "logo_width": 100
+          }
+        },
+        "logos-2": {
+          "type": "logo-item",
+          "settings": {
+            "description": "<p>Include a brief quote from a brand that loves your products<\/p>",
+            "logo_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "logos-0",
+        "logos-1",
+        "logos-2"
+      ],
+      "settings": {
+        "title": "Logo list",
+        "logo_opacity": 60,
+        "text_color": "text-dark",
+        "bg_color": "#ffffff"
+      }
+    },
+    "1631488820f9ead776": {
+      "type": "page-faq",
+      "blocks": {
+        "1631488820f9ead776-0": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQ"
+          }
+        },
+        "1631488820f9ead776-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        },
+        "1631488820f9ead776-2": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        },
+        "1631488820f9ead776-3": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "content": "<p>Share details about your shipping policies, item returns, or customer service.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1631488820f9ead776-0",
+        "1631488820f9ead776-1",
+        "1631488820f9ead776-2",
+        "1631488820f9ead776-3"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "height": "margin--medium",
+        "text_color": "text-dark",
+        "bg_color": "#ffffff"
+      }
+    },
+    "newsletter": {
+      "type": "section-newsletter",
+      "settings": {
+        "title": "Ride the wave",
+        "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+        "enable_name": false,
+        "flex_align": "align--middle-stacked",
+        "text_color": "white",
+        "button_color": "btn--secondary",
+        "height": "two-fifty-height-hero",
+        "width": "default",
+        "bg_image": "shopify:\/\/shop_images\/STORM_copy.jpg",
+        "bg_position": "center-center",
+        "overlay_opacity": 80,
+        "overlay_color": "#000000"
+      }
+    },
+    "icons": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon-0": {
+          "type": "text-item",
+          "settings": {
+            "icon_name": "icon-lock-card",
+            "icon_color": "#545454",
+            "title": "Secure transactions",
+            "text": "Transactions are handled with bank-grade security."
+          }
+        },
+        "icon-1": {
+          "type": "text-item",
+          "settings": {
+            "icon_name": "icon-basket-like",
+            "icon_color": "#545454",
+            "title": "Simple checkout",
+            "text": "Our secure checkout is quick and easy to use."
+          }
+        },
+        "icon-2": {
+          "type": "text-item",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_color": "#545454",
+            "title": "Get in touch",
+            "text": "Have questions? Get in touch with us at any time."
+          }
+        }
+      },
+      "block_order": [
+        "icon-0",
+        "icon-1",
+        "icon-2"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "icon_size": "icon--small",
+        "icon_alignment": "icon--top",
+        "text_color": "text-dark",
+        "heading_size": "h6",
+        "height": "margin--medium",
+        "bg_color": "#fafafa"
+      }
+    },
+    "16314888538065701c": {
+      "type": "section-reviews",
+      "disabled": true,
+      "blocks": {
+        "16314888538065701c-0": {
+          "type": "review",
+          "settings": {
+            "title": "Jeremy Usborne",
+            "review_text": "<p>Use this text to showcase a review from one of your customers.  A great review is honest and speaks to the concerns of your customers.<\/p>",
+            "subheading": "Industry Expert",
+            "review_url": "",
+            "review_link_name": ""
+          }
+        },
+        "16314888538065701c-1": {
+          "type": "review",
+          "settings": {
+            "title": "Willy Bridge",
+            "review_text": "<p>Use this text to showcase a review from one of your customers.  A great review is honest and speaks to the concerns of your customers.<\/p>",
+            "subheading": "Industry Expert",
+            "review_url": "",
+            "review_link_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "16314888538065701c-0",
+        "16314888538065701c-1"
+      ],
+      "settings": {
+        "text_align": "text-left",
+        "text_color": "text-dark",
+        "bg_color": "#fafafa"
+      }
+    }
+  },
+  "order": [
+    "1631488229db0b6bb2",
+    "slideshow",
+    "featured-collection",
+    "rich-text",
+    "image-with-text",
+    "product-with-image",
+    "tabs",
+    "1631488884ef58f72a",
+    "lookbook",
+    "hero",
+    "logos",
+    "1631488820f9ead776",
+    "newsletter",
+    "icons",
+    "16314888538065701c"
+  ]
+}

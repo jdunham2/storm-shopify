@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "show_title": true,
+        "show_description": true,
+        "text_color": "text-dark",
+        "flex_align": "align--middle-left",
+        "transparent": false,
+        "show_image": true,
+        "banner_layout": "overlay",
+        "height": "screen-height-one-third",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000"
+      }
+    },
+    "subcollections": {
+      "type": "subcollection",
+      "settings": {
+        "subcollection_layout": "grid",
+        "subcollection_description": false,
+        "select_image": "collection"
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "61bca635-a5af-4582-b4a7-422316ed3bee": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "featured_image_bg_position": "center-center",
+            "featured_heading": "Featured link",
+            "featured_text": "<p>Promote products or collections<\/p><p><\/p>",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "61bca635-a5af-4582-b4a7-422316ed3bee"
+      ],
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "inline-open",
+        "grid": 3,
+        "grid_mobile": "2",
+        "product_limit": 36,
+        "enable_reviews": false
+      }
+    },
+    "163233784535eb06af": {
+      "type": "text-promo",
+      "blocks": {
+        "163233784535eb06af-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Text promo"
+          }
+        },
+        "163233784535eb06af-1": {
+          "type": "text",
+          "settings": {
+            "content": "Advertise a promotion or a sale"
+          }
+        },
+        "163233784535eb06af-2": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop now",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "163233784535eb06af-0",
+        "163233784535eb06af-1",
+        "163233784535eb06af-2"
+      ],
+      "settings": {
+        "border": true,
+        "bg_color": "#f7f7f7",
+        "text_color": "text-dark",
+        "width": "wrapper--full",
+        "bg_position": "center-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "main",
+    "163233784535eb06af"
+  ]
+}
