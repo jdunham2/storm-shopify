@@ -1,0 +1,19 @@
+window.addEventListener('DOMContentLoaded', () => {
+    let main_image_background = document.getElementById('product_image_background');
+    let main_image_foreground = document.getElementById('product_image_foreground');
+
+    // if the thumbnail selected is the first one show the animated images
+    document.querySelectorAll('.product__thumbs--square .thumb').forEach(thumbnailEl => {
+        thumbnailEl.addEventListener('click', (event) => {
+            const target = /** @type {HTMLElement} */ (event.target);
+
+            if (target.closest('.thumb') === target.closest('.product__thumbs--square .thumb:first-of-type')) {
+                main_image_background.style.display = "block";
+                main_image_foreground.style.display = "block";
+            } else {
+                main_image_background.style.display = "none";
+                main_image_foreground.style.display = "none";
+            }
+        });
+    });
+})
