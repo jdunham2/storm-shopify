@@ -12,37 +12,43 @@
     "header_link": "#3b434b",
     "header_link_hover": "#ec2a22",
     "show_logo_bg": false,
-    "menu_bg_color": "#2b2b2b",
-    "menu_border_color": "#2b2b2b",
-    "menu_link_color": "#ffffff",
-    "menu_link_hover_color": "#c8e4f2",
+    "menu_bg_color": "#ffffff",
+    "menu_border_color": "#eef4f7",
+    "menu_link_color": "#c8e4f2",
+    "menu_link_hover_color": "#ec2a22",
     "submenu_bg_color": "#2b2b2b",
     "submenu_link_color": "#ffffff",
-    "submenu_link_hover_color": "#c8e4f2",
+    "submenu_link_hover_color": "#9ddaea",
     "menu_transparent_color": "#ffffff",
     "footer_bg": "#1f1f1f",
     "footer_border": "#212121",
-    "footer_text": "#fafafa",
-    "footer_link": "#c8e4f2",
+    "footer_text": "#3b434b",
+    "footer_link": "#2b2b2b",
     "footer_link_hover": "#808080",
-    "type_heading_font": "monotype_news_gothic_n4",
-    "type_heading_size": 100,
-    "type_base_font": "monotype_news_gothic_n4",
+    "type_heading_font": "maven_pro_n7",
+    "type_heading_size": 105,
+    "type_base_font": "pt_mono_n4",
     "type_body_size": 95,
+    "type_nav_font": "heading",
+    "type_nav_size": 115,
+    "type_nav_caps": true,
     "animations_enable": true,
+    "parallax_enable": true,
     "product_grid_outline": false,
+    "button_radius_style": "square",
     "show_scroll_top_button": true,
     "enable_product_reviews": true,
     "image_hover_enable": true,
     "product_grid_aspect_ratio": 1.3,
     "sale_tags_enable": true,
-    "sale_bg_color": "#c8e4f2",
-    "sale_text_color": "#ec2a22",
+    "sale_bg_color": "#9ddaea",
+    "sale_text_color": "#ffffff",
     "badge_bg_color": "#ffffff",
     "badge_text_color": "#212121",
     "quickview_enable": true,
     "favicon": "shopify:\/\/shop_images\/storm-logo.png",
     "enable_order_notes": false,
+    "enable_estimate_shipping": false,
     "show_free_shipping_message": true,
     "message": "Spend ||amount|| for FREE Shipping",
     "free_shipping_limit": "99",
@@ -54,7 +60,7 @@
     "checkout_sidebar_background_color": "#c8e4f2",
     "checkout_heading_font": "Open Sans",
     "checkout_body_font": "Open Sans",
-    "checkout_accent_color": "#3b434b",
+    "checkout_accent_color": "#9ddaea",
     "checkout_button_color": "#ec2a22",
     "checkout_error_color": "#ed6161",
     "enable_free_shipping_message": true,
@@ -67,12 +73,12 @@
         "settings": {
           "header_style": "logo_beside",
           "logo": "shopify:\/\/shop_images\/black_logo.png",
-          "logo_max_limit": 180,
+          "logo_max_limit": 130,
           "main_menu_linklist": "main-menu",
-          "enable_search": true,
+          "enable_search": false,
           "enable_account": true,
           "header_sticky": "sticky",
-          "transparent_home": true,
+          "transparent_home": false,
           "transparent_collection": false,
           "transparent_article": false,
           "transparent_logo": "shopify:\/\/shop_images\/red_logo.png",
@@ -82,10 +88,11 @@
       "announcement": {
         "type": "announcement",
         "blocks": {
-          "c4c2c404-1ad4-4ed3-baee-62421a67db6f": {
-            "type": "text",
+          "20d2b21f-5645-4d2e-b519-6700092dd130": {
+            "type": "message",
             "settings": {
-              "text": "<p><strong>Welcome to Nirvana<\/strong> | Shop<\/p>",
+              "show_wheel": true,
+              "message": "Spend ||amount|| More for FREE Shipping.",
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
@@ -94,11 +101,10 @@
               "target_device": "mobile"
             }
           },
-          "20d2b21f-5645-4d2e-b519-6700092dd130": {
-            "type": "message",
+          "c4c2c404-1ad4-4ed3-baee-62421a67db6f": {
+            "type": "text",
             "settings": {
-              "show_wheel": true,
-              "message": "Spend ||amount|| More for FREE Shipping.",
+              "text": "<p><strong>Welcome to Nirvana<\/strong> | Shop<\/p>",
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
@@ -121,12 +127,12 @@
           }
         },
         "block_order": [
-          "c4c2c404-1ad4-4ed3-baee-62421a67db6f",
           "20d2b21f-5645-4d2e-b519-6700092dd130",
+          "c4c2c404-1ad4-4ed3-baee-62421a67db6f",
           "14889516-f0cd-4a9f-9e34-6d25d207554c"
         ],
         "settings": {
-          "bg_color": "#eef4f7",
+          "bg_color": "#c8e4f2",
           "color": "#000000",
           "layout": "slider",
           "speed": 7
@@ -137,6 +143,7 @@
         "blocks": {
           "footer-0": {
             "type": "linklist",
+            "disabled": true,
             "settings": {
               "linklist": "main-menu",
               "title": ""
@@ -145,12 +152,13 @@
           "footer-1": {
             "type": "social",
             "settings": {
-              "title": "Social",
-              "richtext": "<p>Stay current with updates from our social channels.<\/p>"
+              "title": "",
+              "richtext": ""
             }
           },
           "footer-2": {
             "type": "newsletter",
+            "disabled": true,
             "settings": {
               "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
               "enable_name": false
@@ -163,15 +171,15 @@
           "footer-2"
         ],
         "settings": {
-          "footer_logo": "shopify:\/\/shop_images\/STORM-FULL_COLOR.png",
-          "logo_image_width": 150,
-          "image": "shopify:\/\/shop_images\/STORM_copy.jpg",
-          "bg_position": "center-center",
-          "overlay_opacity": 80,
+          "footer_logo": "shopify:\/\/shop_images\/black_logo.png",
+          "logo_image_width": 175,
+          "image": "shopify:\/\/shop_images\/footer-bg.png",
+          "bg_position": "center-bottom",
+          "overlay_opacity": 0,
           "overlay_color": "#000000",
           "footer_secondary_linklist": "legal-menu",
           "footer_payment_enable": true,
-          "show_locale_selector": true,
+          "show_locale_selector": false,
           "show_currency_selector": false,
           "type": "currency"
         }

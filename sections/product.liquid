@@ -161,7 +161,17 @@
                                                     <a href="{{ product.url }}">{{ product.title | strip_html }}</a>
                                                 {% endif %}
                                             </h1>
-
+                                              <!-- Stamped - Begin Star Rating Badge -->
+                                              <span 
+                                              class="stamped-product-reviews-badge stamped-main-badge" 
+                                              data-id="{{ product.id }}" 
+                                              data-product-sku="{{ product.handle }}" 
+                                              data-product-title="{{product.title}}" 
+                                              data-product-type="{{product.type}}" 
+                                              style="display: block;">
+                                              {{product.metafields.stamped.badge}}
+                                              </span>
+                                              <!-- Stamped - End Star Rating Badge --><br>
                                             {%- if template.name == 'product' -%}
                                                 {{ product_rating_markup }}
                                             {%- endif -%}

@@ -194,6 +194,7 @@
         "custom-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/disrupt_the_norm.png",
             "bg_position": "center-center",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
@@ -234,7 +235,7 @@
         "height": "screen-height-one-half",
         "padding": true,
         "borders": false,
-        "wrapper": false
+        "wrapper": true
       }
     },
     "imgtxt": {
@@ -292,10 +293,32 @@
       "settings": {
         "related_products_enable": true,
         "limit": 3,
-        "product_recommendations_heading": "Related products",
+        "product_recommendations_heading": "You may also like",
         "show_recently_viewed": false,
         "product_recently_limit": 4,
         "product_recently_heading": "Recently viewed"
+      }
+    },
+    "1633063071b8ee7dac": {
+      "type": "section-logo-list",
+      "blocks": {
+        "1633063071b8ee7dac-0": {
+          "type": "logo-item",
+          "settings": {
+            "description": "",
+            "logo": "shopify:\/\/shop_images\/disrupt_the_norm.png",
+            "logo_width": 240
+          }
+        }
+      },
+      "block_order": [
+        "1633063071b8ee7dac-0"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 100,
+        "text_color": "text-dark",
+        "bg_color": "#ffffff"
       }
     }
   },
@@ -307,6 +330,7 @@
     "reviews",
     "custom",
     "imgtxt",
-    "related"
+    "related",
+    "1633063071b8ee7dac"
   ]
 }

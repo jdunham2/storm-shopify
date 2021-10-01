@@ -1,3 +1,18 @@
+<!--Stamped - Begin Main Widget -->
+<div style="max-width:90%;margin-left:auto; margin-right:auto;"
+id="stamped-main-widget"   
+data-product-id="{{ product.id }}"   
+data-name="{{ product.title | escape }}"   
+data-url="{{ shop.url }}{{ product.url }}"   
+data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+data-description="{{ product.description | escape }}"   
+data-product-sku="{{product.handle}}"
+data-product-title="{{product.title}}" 
+data-product-type="{{product.type}}">   
+{{product.metafields.stamped.reviews}}   
+</div>
+<!-- Stamped - End Main Widget -->
+
 <!-- /snippets/products-recommendation.liquid -->
 {%- if recommendations.performed -%}
   {%- if recommendations.products_count > 0 -%}
