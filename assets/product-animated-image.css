@@ -14,22 +14,22 @@
     display: block;
 }
 
-#product_image_background,
-#product_image_foreground{
+.product_image_background,
+.product_image_foreground{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-#product_image_background{
+.product_image_background{
     z-index: 0;
 }
 .product_image-main{
     position: relative;
     z-index: 1;
 }
-#product_image_foreground{
+.product_image_foreground{
     z-index: 2;
 }
 
@@ -63,27 +63,27 @@
     padding: 0 5px;
 }
 
-#product_image_background{
+.product_image_background{
     animation: backgroundMove 6s ease 0s infinite normal none;
 }
 
-#product_image_foreground{
+.product_image_foreground{
       animation: foregroundMove 6s ease 0s infinite normal none;
 }
 
 @keyframes foregroundMove {
     0.0%{
     }
-    50.3%{
-        transform: translate(0, -20px)
+    50%{
+        transform: translate(0, -30px)
     }
 }
 
 @keyframes backgroundMove {
     0.0%{
     }
-    50.3%{
-        transform: translate(0, 25px);
+    50%{
+        transform: translate(0, 30px);
     }
 }
 

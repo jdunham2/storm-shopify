@@ -1,19 +1,39 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let main_image_background = document.getElementById('product_image_background');
-    let main_image_foreground = document.getElementById('product_image_foreground');
-
-    // if the thumbnail selected is the first one show the animated images
+    const mutationObserver = new MutationObserver(mutationCallback)
     document.querySelectorAll('.product__thumbs--square .thumb').forEach(thumbnailEl => {
-        thumbnailEl.addEventListener('click', (event) => {
-            const target = /** @type {HTMLElement} */ (event.target);
-
-            if (target.closest('.thumb') === target.closest('.product__thumbs--square .thumb:first-of-type')) {
-                main_image_background.style.display = "block";
-                main_image_foreground.style.display = "block";
-            } else {
-                main_image_background.style.display = "none";
-                main_image_foreground.style.display = "none";
-            }
-        });
+        mutationObserver.observe(thumbnailEl, { attributes: true })
     });
 })
+
+function consoleLog() {
+    console.log('jeshua', ...arguments);
+}
+
+function mutationCallback(mutationsList, observer) {
+    mutationsList.forEach(mutation => {
+        if (mutation.attributeName === 'class') {
+            const target = mutation.target;
+            if (Array.from(target.classList).includes('is-active')) {
+                const thumbnailLink = /** @type {HTMLElement} */ (target.querySelector('.thumb__link'));
+                const dataMediaId = thumbnailLink.dataset.mediaId;
+                const fullImage = document.querySelector(`div[data-media-id="${dataMediaId}"]`);
+                consoleLog(fullImage);
+                let variantId;
+                Array.from(fullImage.classList).map(className => {
+                    if (className.includes('featured-image-for__')) {
+                        variantId = className.replace(/^[\D]*/g, '');
+                    }
+                });
+
+                /** @type {NodeListOf<HTMLElement>} */
+                (document.querySelectorAll('.animated-images-container')).forEach(container => container.style.display = 'none');
+
+                consoleLog('variantId', variantId);
+                if (variantId) {
+                    /** @type {HTMLElement} */
+                    (document.querySelector(`.animated-images-for__${variantId}`)).style.display = 'block';
+                }
+            }
+        }
+    })
+}

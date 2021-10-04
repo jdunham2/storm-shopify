@@ -63,25 +63,36 @@
                         .slides-and-animated-images-container .product__slideproductFeaturedImage:not(.is-selected) + .animated-images-container {
                             display: none;
                         }
+                        .zIndex-1 { z-index: 1; }
                     </style>
                     <div class="slides-and-animated-images-container">
-                        <div class="product__slides product-single__photos" data-product-single-media-group data-product-slideshow>
+                        <div class="product__slides product-single__photos zIndex-1" data-product-single-media-group data-product-slideshow>
                             {%- liquid
                               for media in product.media
-                                render 'media', media: media, featured_media: featured_media, sectionkey: unique, image_size_setting: image_size
+                                assign variant_featured_media_class = ''
+                                for variant in product.variants
+                                    if media == variant.featured_media
+                                        assign variant_featured_media_class = 'featured-image-for__' | append: variant.id
+                                    endif
+                                endfor
+                                render 'media', media: media, featured_media: featured_media, sectionkey: unique, image_size_setting: image_size, additional_image_class: variant_featured_media_class
                               endfor
                               -%}
                         </div>
-                        <div class="animated-images-container">
-                            {%- liquid
-                                if section.settings.product_image_background != blank
-                                    render 'product-animated-images', image: section.settings.product_image_background, type: 'background'
-                                endif
-                                if section.settings.product_image_foreground != blank
-                                    render 'product-animated-images', image: section.settings.product_image_foreground, type: 'foreground'
-                                endif
-                            -%}
-                        </div>
+                        {% for variant in product.variants %}
+                            <div class="animated-images-container animated-images-for__{{ variant.id }}">
+                                <div>
+                                    {%- liquid
+                                        if variant.metafields.animated.animated_background.value != blank
+                                            render 'product-animated-images', image: variant.metafields.animated.animated_background.value, type: 'background'
+                                        endif
+                                        if variant.metafields.animated.animated_foreground.value != blank
+                                            render 'product-animated-images', image: variant.metafields.animated.animated_foreground.value, type: 'foreground'
+                                        endif
+                                    -%}
+                                </div>
+                            </div>
+                        {% endfor %}
                     </div>
 
                     {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}

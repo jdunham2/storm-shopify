@@ -1,0 +1,228 @@
+<style>
+    .block--full-width {
+        grid-column: 1/-1;
+    }
+    @media screen and (max-width: 799px) {
+        .block--full-width--mobile {
+            grid-column: 1/-1;
+        }
+    }
+</style>
+{% if outsideCarouselBlocksOnly %}
+    <!-- Always show title block first -->
+    {% for block in section.blocks %}
+        {%- liquid
+            if block.type != 'title'
+                continue
+            endif
+        -%}
+        <div class="block__{{ block.id }} {% if block.settings.full_width_col %} block--full-width {% endif %} {% if block.settings.full_width_col_mobile %} block--full-width--mobile {% endif %} {{ block.settings.block_class }}">
+
+            <style>
+                .section__{{ section.id }} .block__{{ block.id }} {
+                    width: 100%;
+                    max-width: {{ block.settings.max_width }}px;
+                    {% if block.settings.max_width == 0 %}
+                        max-width: 100%;
+                    {% endif %}
+                    margin: 0 auto;
+                    padding: {{ block.settings.padding }};
+                }
+                .section__{{section.id}} .block__{{ block.id }} .jod-section-text__text {
+                    {% if block.settings.color != blank %}
+                        color: {{block.settings.color }};
+                    {% endif %}
+                    line-height: {{ block.settings.line_height | default: 1.2 }};
+                    {% if block.settings.bold == true %}
+                        font-weight: 700;
+                    {% endif %}
+                    {% if block.settings.italic == true %}
+                        font-style: italic;
+                    {% endif %}
+                    text-align: {{ block.settings.align }};
+                }
+                @media screen and (max-width: 799px) {
+                    .section__{{section.id}} .block__{{ block.id }} .jod-section-text__text {
+                        text-align: {{ block.settings.mobile_align }};
+                    }
+                }
+                .section__{{section.id}} .block__{{ block.id }} .jod-section-text__text p {
+                    {% if block.settings.color != blank %}
+                        color: {{block.settings.color }};
+                    {% endif %}
+                }
+
+            </style>
+
+            <div class="jod-section-text__text-container {{ block.settings.classes }}{% if block.settings.align == 'center' %} text-center{% endif %}">
+                {% if block.settings.small == true %}
+                    <small>
+                    {% endif %}
+
+                    <div class="jod-section-text__text jd-text--{{ block.settings.size }}">
+                        {% if block.settings.text != blank %}
+                            {{ block.settings.text }}
+                        {% elsif block.settings.rich_text != blank %}
+                            {{ block.settings.rich_text }}
+                        {% endif %}
+                    </div>
+
+                    {% if block.settings.small == true %}
+                    </small>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+
+
+    <!-- Cell items (carousel if mobile) -->
+    {% for block in section.blocks %}
+        {%- liquid
+            if block.type == 'title'
+                continue
+            endif
+        -%}
+        {% if isCarouselCell %}
+            <div class="carousel-cell {% if block.settings.show_in_mobile_slider == false %} will-remove-cell {% endif %}">
+            {% endif %}
+            <div class="block__{{ block.id }} {% if block.settings.full_width_col %} block--full-width {% endif %} {% if block.settings.full_width_col_mobile %} block--full-width--mobile {% endif %} {{ block.settings.block_class }}">
+
+                {% if block.type == 'image_with_text' %}
+                    <style>
+                        .section__{{ section.id }} .block__{{ block.id }}  {
+                            width: 100%;
+                            max-width: {{ block.settings.max_width }}px;
+                            {% if block.settings.max_width == 0 %}
+                                max-width: 100%;
+                            {% endif %}
+                            margin: 0 auto;
+                            padding: {{ block.settings.content_padding | default: 0 }}px;
+                        }
+                        .section__{{ section.id }} .block__{{ block.id }} .jod-section-columns__text {
+                            {% if block.settings.color != blank %}
+                                color: {{block.settings.color }};
+                            {% endif %}
+                            line-height: {{ block.settings.line_height | default: 1.2 }};
+                            {% if block.settings.bold == true %}
+                                font-weight: 700;
+                            {% endif %}
+                            {% if block.settings.italic == true %}
+                                font-style: italic;
+                            {% endif %}
+                        }
+                        .section__{{section.id}} .block__{{ block.id }} .jod-section-columns__image-wrapper {
+
+                            height: auto;
+                            max-height: {{ block.settings.image_max_height }}px;
+                            {% if block.settings.image_max_height == 0 %}
+                                max-height: 100%;
+                            {% endif %}
+                            margin-bottom: {{ block.settings.image_margin_bottom | default: 0 }}px;
+                            display: flex;
+                            justify-content: {{ block.settings.image_align }};
+                            align-items: center;
+                        }
+
+                        .section__{{section.id}} .block__{{ block.id }} .jod-section-columns__text p {
+                            {% if block.settings.color != blank %}
+                                color: {{block.settings.color }};
+                            {% endif %}
+                        }
+
+                        .section__{{section.id}} .block__{{ block.id }} .jod-section-columns__image {
+                            max-width: {{ block.settings.image_max_width }}px;
+                            {% if block.settings.image_max_width == 0 %}
+                                max-width: 100%;
+                            {% endif %}
+                            min-width: {{ block.settings.image_min_width }}px;
+                        }
+                        /*  */
+                    </style>
+
+                    <div class="jod-section-columns__block-image_with_text jd-text-center {% if block.settings.inline_text %} flex align-center justify-center {% endif %}">
+                        <div class="jod-section-columns__image-wrapper">
+                            <img src="{{ block.settings.image | img_url:'1920x' }}" class="jod-section-columns__image {{ block.settings.image_classes }}">
+                        </div>
+                        <div class="jod-section-columns__text-wrapper {% if block.settings.inline_text %} pl-1 text-left {% endif %}">
+                            {% if block.settings.small == true %}
+                                <small>
+                                {% endif %}
+
+                                <div class="jod-section-columns__text jd-text--{{ block.settings.size }}">
+                                    {% if block.settings.text != blank %}
+                                        {{ block.settings.text }}
+                                    {% elsif block.settings.rich_text != blank %}
+                                        {{ block.settings.rich_text }}
+                                    {% endif %}
+                                </div>
+
+                                {% if block.settings.small == true %}
+                                </small>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                {% elsif block.type == 'text' %}
+                    <style>
+                        .section__{{ section.id }} .block__{{ block.id }} {
+                            width: 100%;
+                            max-width: {{ block.settings.max_width }}px;
+                            {% if block.settings.max_width == 0 %}
+                                max-width: 100%;
+                            {% endif %}
+                            margin: 0 auto;
+                            padding: {{ block.settings.padding }};
+                        }
+                        .section__{{section.id}} .block__{{ block.id }} .jod-section-text__text {
+                            {% if block.settings.color != blank %}
+                                color: {{block.settings.color }};
+                            {% endif %}
+                            line-height: {{ block.settings.line_height | default: 1.2 }};
+                            {% if block.settings.bold == true %}
+                                font-weight: 700;
+                            {% endif %}
+                            {% if block.settings.italic == true %}
+                                font-style: italic;
+                            {% endif %}
+                            text-align: {{ block.settings.align }};
+                        }
+                        @media screen and (max-width: 799px) {
+                            .section__{{section.id}} .block__{{ block.id }} .jod-section-text__text {
+                                text-align: {{ block.settings.mobile_align }};
+                            }
+                        }
+                        .section__{{section.id}} .block__{{ block.id }} .jod-section-text__text p {
+                            {% if block.settings.color != blank %}
+                                color: {{block.settings.color }};
+                            {% endif %}
+                        }
+
+                    </style>
+
+                    <div class="jod-section-text__text-container {{ block.settings.classes }}{% if block.settings.align == 'center' %} text-center{% endif %}">
+                        {% if block.settings.small == true %}
+                            <small>
+                            {% endif %}
+
+                            <div class="jod-section-text__text jd-text--{{ block.settings.size }}">
+                                {% if block.settings.text != blank %}
+                                    {{ block.settings.text }}
+                                {% elsif block.settings.rich_text != blank %}
+                                    {{ block.settings.rich_text }}
+                                {% endif %}
+                            </div>
+
+                            {% if block.settings.small == true %}
+                            </small>
+                        {% endif %}
+                    </div>
+
+                {% endif %}
+
+            </div>
+            {% if isCarouselCell %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}

@@ -1,3 +1,5 @@
-<div id="product_image_{{ type }}">
-    <img src="{{ image | img_url: '900x' }}">
+<div class="product_image_{{ type }}">
+    {% if image != blank %}
+        <img src="{{ image | img_url: '900x' }}">
+    {% endif %}
 </div>
