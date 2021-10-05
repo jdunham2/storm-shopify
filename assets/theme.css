@@ -32,7 +32,7 @@ https://flickity.metafizzy.co
 
 
 .footer__logo {
-    padding-top: 6em!important;
+    padding-top: 7em!important;
     display: block!important;
     margin: 0 auto;
     max-width: 360px;
@@ -42,4 +42,16 @@ https://flickity.metafizzy.co
 
 .rc-container-wrapper {
   display:none;
+}
+
+.section__template--14990690222230__16334305542cb6aec3 .overlay--jd {
+
+  /* Set a specific height */
+  min-height: 550px!important;
+  position:fixed!important;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed!important;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
 }
