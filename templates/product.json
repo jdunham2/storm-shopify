@@ -317,7 +317,7 @@
             "content_padding": 0,
             "image": "shopify:\/\/shop_images\/tear-3_8d8eb7b2-aed4-436b-b356-d02bcdff2938.png",
             "image_classes": "w100 position-absolute",
-            "image_style": "",
+            "image_style": "transform: translateY(-2%)",
             "image_max_height": "",
             "image_max_width": "",
             "image_min_width": "",
