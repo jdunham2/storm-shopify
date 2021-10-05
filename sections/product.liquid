@@ -80,6 +80,31 @@
                               -%}
                         </div>
                         {% for variant in product.variants %}
+                            <style>
+                                {%- liquid
+                                    assign backgroundMaxWidth = variant.metafields.animated.background_max_width.value | default: '80%'
+                                    assign backgroundPosition = variant.metafields.animated.background_position.value | default: '40% 0 0 8%'
+                                    assign foregroundMaxWidth = variant.metafields.animated.foreground_max_width.value | default: '20%'
+                                    assign foregroundPosition = variant.metafields.animated.foreground_position.value | default: '20% 0 0 65%'
+                                -%}
+                                .animated-images-for__{{ variant.id }} .product_image_background {
+                                    {% if backgroundMaxWidth != blank %}
+                                        max-width: {{backgroundMaxWidth}};
+                                    {% endif %}
+                                    {% if backgroundPosition != blank %}
+                                        margin: {{backgroundPosition}};
+                                    {% endif %}
+                                }
+                                .animated-images-for__{{ variant.id }} .product_image_foreground {
+                                    {% if foregroundMaxWidth != blank %}
+                                        max-width: {{foregroundMaxWidth}};
+                                    {% endif %}
+                                    {% if foregroundPosition != blank %}
+                                        margin: {{foregroundPosition}};
+                                    {% endif %}
+                                }
+                                /*  */
+                            </style>
                             <div class="animated-images-container animated-images-for__{{ variant.id }}">
                                 <div>
                                     {%- liquid
@@ -172,17 +197,11 @@
                                                     <a href="{{ product.url }}">{{ product.title | strip_html }}</a>
                                                 {% endif %}
                                             </h1>
-                                              <!-- Stamped - Begin Star Rating Badge -->
-                                              <span 
-                                              class="stamped-product-reviews-badge stamped-main-badge" 
-                                              data-id="{{ product.id }}" 
-                                              data-product-sku="{{ product.handle }}" 
-                                              data-product-title="{{product.title}}" 
-                                              data-product-type="{{product.type}}" 
-                                              style="display: block;">
-                                              {{product.metafields.stamped.badge}}
-                                              </span>
-                                              <!-- Stamped - End Star Rating Badge --><br>
+                                            <!-- Stamped - Begin Star Rating Badge -->
+                                            <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" data-product-title="{{product.title}}" data-product-type="{{product.type}}" style="display: block;">
+                                                {{product.metafields.stamped.badge}}
+                                            </span>
+                                            <!-- Stamped - End Star Rating Badge --><br>
                                             {%- if template.name == 'product' -%}
                                                 {{ product_rating_markup }}
                                             {%- endif -%}

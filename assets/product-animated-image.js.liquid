@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.slides-and-animated-images-container .animated-images-container').style.display = 'block'
     const mutationObserver = new MutationObserver(mutationCallback)
     document.querySelectorAll('.product__thumbs--square .thumb').forEach(thumbnailEl => {
         mutationObserver.observe(thumbnailEl, { attributes: true })
@@ -6,7 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 function consoleLog() {
-    console.log('jeshua', ...arguments);
+    const DEBUG = false;
+    if (DEBUG) {
+        console.log('jeshua', ...arguments);
+    }
 }
 
 function mutationCallback(mutationsList, observer) {
