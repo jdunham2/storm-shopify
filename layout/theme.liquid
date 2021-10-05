@@ -1,66 +1,71 @@
 <!doctype html>
 <html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="{{ settings.accent_secondary }}">
-  <link rel="canonical" href="{{ canonical_url }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="theme-color" content="{{ settings.accent_secondary }}">
+        <link rel="canonical" href="{{ canonical_url }}">
 
-  <!-- ======================= Broadcast Theme V3.0.0 ========================= -->
+        <!-- ======================= Broadcast Theme V3.0.0 ========================= -->
 
-  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
-  <link rel="preconnect" href="https://monorail-edge.shopifysvc.com" crossorigin>
+        <link crossorigin href="https://cdn.shopify.com" rel="preconnect">
+        <link crossorigin href="https://fonts.shopify.com" rel="preconnect">
+        <link crossorigin href="https://monorail-edge.shopifysvc.com" rel="preconnect">
 
-  <link rel="preload" href="{{ 'lazysizes.js' | asset_url }}" as="script">
-  <link rel="preload" href="{{ 'vendor.js' | asset_url }}" as="script">
-  <link rel="preload" href="{{ 'theme.js' | asset_url }}" as="script">
-  <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style"> 
+        <link rel="preload" href="{{ 'lazysizes.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'vendor.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'theme.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style">
 
-  {% if settings.favicon %}
-    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
-  {% endif %}
+        {% if settings.favicon %}
+            <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png"/>
+        {% endif %}
 
-  <!-- Title and description ================================================ -->
-  {% capture seo_title %}
-    {% assign title_content = page_title %}
-    {% if template == 'password' %}
-      {% assign title_content = shop.name %}
-    {%- endif -%}
-    {{ title_content }}
-    {% if current_tags %}
-      {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
-    {% endif %}
-    {% if current_page != 1 %}
-      &ndash; {{ 'general.meta.page' | t: page: current_page }}
-    {% endif %}
-    {% unless page_title contains shop.name %}
-      &ndash; {{ shop.name }}
-    {% endunless %}
-  {% endcapture %}
-  <title>{{ seo_title }}</title>
+        <!-- Title and description ================================================ -->
+        {% capture seo_title %}
+            {% assign title_content = page_title %}
+            {% if template == 'password' %}
+                {% assign title_content = shop.name %}
+            {%- endif -%}
+            {{ title_content }}
+            {% if current_tags %}
+                {%- assign meta_tags = current_tags | join: ', ' %}
+                &ndash;
+                {{ 'general.meta.tags' | t: tags: meta_tags -}}
+            {% endif %}
+            {% if current_page != 1 %}
+                &ndash;
+                {{ 'general.meta.page' | t: page: current_page }}
+            {% endif %}
+            {% unless page_title contains shop.name %}
+                &ndash;
+                {{ shop.name }}
+            {% endunless %}
+        {% endcapture %}
+        <title>{{ seo_title }}</title>
 
-  {% if page_description %}
-    <meta name="description" content="{{ page_description | escape }}">
-  {% else %}
-    <meta name="description" content="{{ shop.description | escape }}">
-  {% endif %}
+        {% if page_description %}
+            <meta name="description" content="{{ page_description | escape }}">
+        {% else %}
+            <meta name="description" content="{{ shop.description | escape }}">
+        {% endif %}
 
-  {% render 'social-meta' %}
+        {% render 'social-meta' %}
 
-  <!-- CSS ================================================================== -->
+        <!-- CSS ================================================================== -->
 
-  {{ 'font-settings.css' | asset_url | stylesheet_tag }}
+        {{ 'font-settings.css' | asset_url | stylesheet_tag }}
 
-  {% render 'css-variables' %}
+        {% render 'css-variables' %}
 
-  {{ 'theme.css' | asset_url | stylesheet_tag }}
+        {{ 'theme.css' | asset_url | stylesheet_tag }}
 
-  <!-- ANIMATED PRODUCT IMAGES -->
-  {{ 'product-animated-image.css' | asset_url | stylesheet_tag }}
-  {{ 'product-animated-image.js' | asset_url | script_tag }}
+        <!-- ANIMATED PRODUCT IMAGES -->
+        {{ 'product-animated-image.css' | asset_url | stylesheet_tag }}
+        {{ 'product-animated-image.js' | asset_url | script_tag }}
 
-  <script>
+        {{ 'jd-custom.css' | asset_url | stylesheet_tag }}
+        <script>
     if (window.navigator.userAgent.indexOf('MSIE ') > 0 || window.navigator.userAgent.indexOf('Trident/') > 0) {
       document.documentElement.className = document.documentElement.className + ' ie';
 
@@ -224,4 +229,6 @@
 
   <!-- And above this comment line ================================================== -->
 </body>
+</html>
+    </head>
 </html>

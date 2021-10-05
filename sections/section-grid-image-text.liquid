@@ -532,27 +532,39 @@
                     "id": "image",
                     "label": "Image"
                 }, {
-                    "type": "number",
+                    "type": "text",
+                    "id": "image_classes",
+                    "label": "Image classes",
+                    "default": "w100"
+                }, {
+                    "type": "text",
+                    "id": "image_style",
+                    "label": "Image Styles",
+                    "info": "Applied to style tag on img -- must be valid css"
+                }, {
+                    "type": "text",
                     "id": "image_max_height",
                     "label": "Image Max Height",
-                    "info": "Enter 0 for 100%",
-                    "default": 0
+                    "info": "Accepts CSS for max-height",
+                    "default": "100%"
                 }, {
-                    "type": "number",
+                    "type": "text",
                     "id": "image_max_width",
                     "label": "Image Max Width",
-                    "info": "Enter 0 for 100%",
-                    "default": 0
+                    "info": "Accepts CSS for max-width",
+                    "default": "100%"
                 }, {
-                    "type": "number",
+                    "type": "text",
                     "id": "image_min_width",
                     "label": "Image Min Width",
-                    "default": 0
+                    "info": "Accepts CSS for min-width",
+                    "default": "0"
                 }, {
-                    "type": "number",
+                    "type": "text",
                     "id": "image_margin_bottom",
-                    "label": "Image Bottom Margin",
-                    "default": 0
+                    "label": "Image Margin",
+                    "info": "Accepts CSS for margin",
+                    "default": "0"
                 }, {
                     "type": "select",
                     "id": "image_align",

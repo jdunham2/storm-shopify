@@ -114,11 +114,8 @@
                         .section__{{section.id}} .block__{{ block.id }} .jod-section-columns__image-wrapper {
 
                             height: auto;
-                            max-height: {{ block.settings.image_max_height }}px;
-                            {% if block.settings.image_max_height == 0 %}
-                                max-height: 100%;
-                            {% endif %}
-                            margin-bottom: {{ block.settings.image_margin_bottom | default: 0 }}px;
+                            max-height: {{ block.settings.image_max_height | default: "100%"}};
+                            margin: {{ block.settings.image_margin_bottom | default: "0" }};
                             display: flex;
                             justify-content: {{ block.settings.image_align }};
                             align-items: center;
@@ -131,18 +128,15 @@
                         }
 
                         .section__{{section.id}} .block__{{ block.id }} .jod-section-columns__image {
-                            max-width: {{ block.settings.image_max_width }}px;
-                            {% if block.settings.image_max_width == 0 %}
-                                max-width: 100%;
-                            {% endif %}
-                            min-width: {{ block.settings.image_min_width }}px;
+                            max-width: {{ block.settings.image_max_width | default: '100%' }};
+                            min-width: {{ block.settings.image_min_width | default: '0' }};
                         }
                         /*  */
                     </style>
 
                     <div class="jod-section-columns__block-image_with_text jd-text-center {% if block.settings.inline_text %} flex align-center justify-center {% endif %}">
                         <div class="jod-section-columns__image-wrapper">
-                            <img src="{{ block.settings.image | img_url:'1920x' }}" class="jod-section-columns__image {{ block.settings.image_classes }}">
+                            <img src="{{ block.settings.image | img_url:'1920x' }}" class="jod-section-columns__image {{ block.settings.image_classes }}" style="{{ block.settings.image_style }}">
                         </div>
                         <div class="jod-section-columns__text-wrapper {% if block.settings.inline_text %} pl-1 text-left {% endif %}">
                             {% if block.settings.small == true %}
