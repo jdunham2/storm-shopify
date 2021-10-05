@@ -4,9 +4,71 @@
       "type": "cart",
       "settings": {
       }
+    },
+    "1633444174ecc54aa6": {
+      "type": "section-grid-image-text",
+      "blocks": {
+        "e12fc18f-a05e-4206-9ee5-1cf708e2888d": {
+          "type": "image_with_text",
+          "settings": {
+            "block_class": "clean-tear",
+            "full_width_col": true,
+            "full_width_col_mobile": true,
+            "content_padding": 0,
+            "image": "shopify:\/\/shop_images\/tear-3_8d8eb7b2-aed4-436b-b356-d02bcdff2938.png",
+            "image_max_height": 0,
+            "image_max_width": 0,
+            "image_min_width": 0,
+            "image_margin_bottom": 0,
+            "image_align": "center",
+            "inline_text": false,
+            "rich_text": "",
+            "text": "",
+            "align": "center",
+            "mobile_align": "center",
+            "size": "default",
+            "color": "",
+            "bold": false,
+            "italic": false,
+            "small": false,
+            "classes": "",
+            "line_height": "1.2"
+          }
+        }
+      },
+      "block_order": [
+        "e12fc18f-a05e-4206-9ee5-1cf708e2888d"
+      ],
+      "settings": {
+        "desktop_cols": 4,
+        "tablet_cols": 3,
+        "mobile_cols": 2,
+        "desktop_col_gap": 20,
+        "mobile_col_gap": 20,
+        "use_mobile_slider": false,
+        "slider_page_dots": false,
+        "slier_timeout": 1500,
+        "mobile_slider_cell_width": "100%",
+        "hide_desktop": false,
+        "hide_tablet": false,
+        "hide_mobile": false,
+        "container_size": "full",
+        "min_height": "100%",
+        "padding": "0px 0px",
+        "padding_mobile_new": "0px 0px",
+        "margin": "0px 0px",
+        "text_color": "",
+        "background_color": "",
+        "background_fit": "cover",
+        "background_position": "center",
+        "background_overlay_intensity": 10,
+        "background_overlay_color": "#000000",
+        "reverse_on_mobile": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1633444174ecc54aa6"
   ]
 }

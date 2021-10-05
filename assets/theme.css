@@ -10,7 +10,7 @@ https://flickity.metafizzy.co
 
 /*! ============ Add any custom styles below this line ================== */
   
-.tear {
+.tear-bg {
   margin-top:-4rem;
   margin-bottom:-4rem; 
   z-index:5999;
@@ -21,4 +21,109 @@ https://flickity.metafizzy.co
   background-size:cover;
   background-repeat:no-repeat;
   display: block;
+}
+  
+#shopify-section-template--14990690222230__featured-collection .grid__heading-holder {
+  margin-bottom: -6em!important;
+}
+  
+#brick-section--template--14990690222230__product-with-image .background-size-cover {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#shopify-section-template--14990690222230__image-with-text .background-size-cover {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  transition: filter 1200ms ease-in-out;
+}
+  
+#shopify-section-template--14990690222230__image-with-text .brick__block:hover .background-size-cover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0%);
+}
+
+.image-overlay {
+  mix-blend-mode: color;
+}
+  
+.footer__logo {
+    padding-top: 95px!important;
+    display: block!important;
+    margin: 0 auto;
+    max-width: 360px;
+    text-align: center;
+}
+
+.product_image_foreground img {
+  max-width:100%;
+}
+
+.product_image_background img {
+  max-width:100%;
+}
+  
+.product_image_foreground {
+  max-width:20%!important;
+  top:20%!important;
+  left:65%!important;
+}
+
+.product_image_background {
+  top:40%!important;
+  left:8%!important;
+  max-width:80%!important;
+}
+#shopify-section-template--14990690517142__main .product_image_background {
+  top:10%!important;
+  left:8%!important;
+  max-width:80%!important;
+}
+.rc-container-wrapper {
+  display:none;
+}
+  
+@media screen and (min-width: 1200px) {
+.section__template--14990690222230__1633431028cbeadc8f {
+    margin: -8.4em 0px -6.25em!important;
+}
+.section__template--14990690222230__163342895425105c05, .tear  {
+    margin: -5.4em 0px -8.25em!important;
+}
+.clean-tear  {
+    margin: 0 0 -5.25em!important;
+}
+.footer-tear {
+    margin: 0 0 0.25em!important;
+}
+}
+
+@media screen and (min-width:640px) and (max-width: 1200px) {
+.section__template--14990690222230__1633431028cbeadc8f {
+    margin: -9.4em 0px -6.25em!important;
+}
+.section__template--14990690222230__163342895425105c05, .tear {
+    margin: -3.4em 0px -6.25em!important;
+}
+.clean-tear {
+    margin: 0 0 -4em!important;
+}
+.footer-tear {
+    margin: 0 0 -0.25em!important;
+}
+}
+  
+@media screen and (max-width: 480px) {
+.section__template--14990690222230__1633431028cbeadc8f {
+    margin: -1.3em 0px -1.75em!important;
+}
+.section__template--14990690222230__163342895425105c05, .tear  {
+    margin: -1.4em 0px -2.25em!important;
+}
+.clean-tear  {
+    margin: 0 0 -1.75em!important;
+}
+.footer-tear {
+    margin: 0 0 -1.75em!important;
+}
 }

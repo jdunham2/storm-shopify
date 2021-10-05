@@ -14,7 +14,7 @@
     "show_logo_bg": false,
     "menu_bg_color": "#ffffff",
     "menu_border_color": "#eef4f7",
-    "menu_link_color": "#c8e4f2",
+    "menu_link_color": "#ec2a22",
     "menu_link_hover_color": "#ec2a22",
     "submenu_bg_color": "#2b2b2b",
     "submenu_link_color": "#ffffff",
@@ -38,8 +38,10 @@
     "button_radius_style": "square",
     "show_scroll_top_button": true,
     "enable_product_reviews": true,
+    "instagram_link": "https:\/\/www.instagram.com\/storm_lifestyle_",
+    "facebook_link": "https:\/\/www.facebook.com\/",
     "image_hover_enable": true,
-    "product_grid_aspect_ratio": 1.3,
+    "product_grid_aspect_ratio": 1.1,
     "sale_tags_enable": true,
     "sale_bg_color": "#9ddaea",
     "sale_text_color": "#ffffff",
@@ -92,7 +94,7 @@
             "type": "message",
             "settings": {
               "show_wheel": true,
-              "message": "Spend ||amount|| More for FREE Shipping.",
+              "message": "Spend ||amount|| More for <b>FREE SHIPPING.<\/b>",
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
@@ -104,7 +106,7 @@
           "c4c2c404-1ad4-4ed3-baee-62421a67db6f": {
             "type": "text",
             "settings": {
-              "text": "<p><strong>Welcome to Nirvana<\/strong> | Shop<\/p>",
+              "text": "<p><strong>Welcome to Nirvana<\/strong> | <a href=\"\/collections\/all\" title=\"All products\">Shop Now<\/a><\/p>",
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
@@ -116,7 +118,7 @@
           "14889516-f0cd-4a9f-9e34-6d25d207554c": {
             "type": "text",
             "settings": {
-              "text": "<p><strong>Introducing Your New Pre<\/strong> | More Info<\/p>",
+              "text": "<p><strong>Introducing Your New Pre<\/strong> | <a href=\"\/products\/pre-workout\" title=\"Pre-Workout\">More Info<\/a><\/p>",
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
@@ -141,40 +143,41 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "737a175f-c93f-4c24-b67e-f7c461d12865": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "storm.",
+              "text": "<p>We are focused on delivering the best in everyday sports supplementation. Great, high-quality products for <strong>ALL<\/strong> sports!<\/p>"
+            }
+          },
           "footer-0": {
             "type": "linklist",
             "disabled": true,
             "settings": {
               "linklist": "main-menu",
-              "title": ""
+              "title": "explore."
             }
           },
-          "footer-1": {
+          "a467efbc-209d-4ca6-b881-6fccf3c54486": {
             "type": "social",
+            "disabled": true,
             "settings": {
               "title": "",
               "richtext": ""
             }
-          },
-          "footer-2": {
-            "type": "newsletter",
-            "disabled": true,
-            "settings": {
-              "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-              "enable_name": false
-            }
           }
         },
         "block_order": [
+          "737a175f-c93f-4c24-b67e-f7c461d12865",
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "a467efbc-209d-4ca6-b881-6fccf3c54486"
         ],
         "settings": {
           "footer_logo": "shopify:\/\/shop_images\/black_logo.png",
-          "logo_image_width": 175,
-          "image": "shopify:\/\/shop_images\/footer-bg.png",
-          "bg_position": "center-bottom",
+          "logo_image_width": 200,
+          "image": "shopify:\/\/shop_images\/footer-bg_186a29cb-d1f8-4557-956e-4f3986cc59aa.png",
+          "bg_position": "center-top",
           "overlay_opacity": 0,
           "overlay_color": "#000000",
           "footer_secondary_linklist": "legal-menu",

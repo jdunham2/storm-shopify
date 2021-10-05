@@ -98,11 +98,14 @@
                 {%- endunless -%}
               {%- endif -%}
             </div>
+     <a href="{%- if block.settings.link != blank -%}{{ block.settings.link }}{%- else -%}{%- endif -%}"> 
 
             <div class="image-overlay" style="background-color:{{ block.settings.overlay_color }} !important; opacity:{{ overlay_opacity }};"></div>
-
+            
             {%- render 'image-background', img_object: block.settings.image, frame_height_class: section.settings.height, bg_position: block.settings.bg_position -%}
-          </div>
+
+                  </a>
+           </div>
         </div>
       {% when 'text' %}
         <div class="brick__block" data-prevent-transparent-header {{ block.shopify_attributes }}>
