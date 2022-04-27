@@ -9206,7 +9206,7 @@
     createThumbSlider() {
       let flickityOptions = {
         autoPlay: false,
-        prevNextButtons: false,
+        prevNextButtons: true,
         contain: true,
         pageDots: false,
         adaptiveHeight: false,
@@ -9223,20 +9223,23 @@
         this.flktyThumbs.resize();
       };
 
-      if (isMobile) {
-        initSlider();
-      }
+      // jeshua - asked to always be a slider, mobile or desktop
+      initSlider();
 
-      document.addEventListener('theme:resize', () => {
-        isMobile = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) < theme.sizes.small;
+      // if (isMobile) {
+      //   initSlider();
+      // }
 
-        if (isMobile) {
-          initSlider();
-        } else if (this.flktyThumbs !== null) {
-          this.flktyThumbs.destroy();
-          this.flktyThumbs = null;
-        }
-      });
+      // document.addEventListener('theme:resize', () => {
+      //   isMobile = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) < theme.sizes.small;
+
+      //   if (isMobile) {
+      //     initSlider();
+      //   } else if (this.flktyThumbs !== null) {
+      //     this.flktyThumbs.destroy();
+      //     this.flktyThumbs = null;
+      //   }
+      // });
     }
 
     sliderThumbs(thisEl) {

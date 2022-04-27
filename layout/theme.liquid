@@ -14,8 +14,8 @@
 
         <link rel="preload" href="{{ 'lazysizes.js' | asset_url }}" as="script">
         <link rel="preload" href="{{ 'vendor.js' | asset_url }}" as="script">
-        <link rel="preload" href="{{ 'theme.js' | asset_url }}" as="script">
-        <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style">
+        <link rel="preload" href="{{ 'theme.dev.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'theme.dev.css' | asset_url }}" as="style">
 
         {% if settings.favicon %}
             <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png"/>
@@ -58,7 +58,7 @@
 
         {% render 'css-variables' %}
 
-        {{ 'theme.css' | asset_url | stylesheet_tag }}
+        {{ 'theme.dev.css' | asset_url | stylesheet_tag }}
 
         <!-- ANIMATED PRODUCT IMAGES -->
         {{ 'product-animated-image.css' | asset_url | stylesheet_tag }}
@@ -150,7 +150,7 @@
   <!-- Theme Javascript ============================================================== -->
   <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script>
 
   <!-- Shopify app scripts =========================================================== -->
 
