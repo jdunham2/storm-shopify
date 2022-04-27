@@ -56,6 +56,7 @@
     },
     "163233784535eb06af": {
       "type": "text-promo",
+      "disabled": true,
       "blocks": {
         "163233784535eb06af-0": {
           "type": "heading",
@@ -91,7 +92,7 @@
         "width": "wrapper--full",
         "bg_position": "center-center",
         "overlay_opacity": 0,
-        "overlay_color": "#000"
+        "overlay_color": "#000000"
       }
     }
   },

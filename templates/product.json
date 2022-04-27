@@ -186,9 +186,9 @@
           "settings": {
             "block_class": "",
             "full_width_col": true,
-            "full_width_col_mobile": true,
+            "full_width_col_mobile": false,
             "max_width": 480,
-            "content_padding": 0,
+            "content_padding": 50,
             "image": "shopify:\/\/shop_images\/disrupt_the_norm_f01e836c-c97d-48f4-ad53-6e66844cb2cf.png",
             "image_classes": "w100",
             "image_style": "",
@@ -210,16 +210,38 @@
             "classes": "",
             "line_height": "1.2"
           }
+        },
+        "e63155b8-0af3-4101-a724-030d5fdaa698": {
+          "type": "text",
+          "settings": {
+            "block_class": "",
+            "full_width_col": false,
+            "full_width_col_mobile": false,
+            "show_in_mobile_slider": true,
+            "rich_text": "",
+            "text": "",
+            "align": "left",
+            "mobile_align": "center",
+            "size": "default",
+            "color": "",
+            "bold": false,
+            "italic": false,
+            "small": false,
+            "padding": "0 20px",
+            "classes": "",
+            "line_height": "1.2"
+          }
         }
       },
       "block_order": [
-        "80b87af5-9e74-4970-954d-e9101e3c8d89"
+        "80b87af5-9e74-4970-954d-e9101e3c8d89",
+        "e63155b8-0af3-4101-a724-030d5fdaa698"
       ],
       "settings": {
-        "desktop_cols": 4,
-        "tablet_cols": 3,
-        "mobile_cols": 2,
-        "desktop_col_gap": 20,
+        "desktop_cols": 1,
+        "tablet_cols": 1,
+        "mobile_cols": 1,
+        "desktop_col_gap": 50,
         "mobile_col_gap": 20,
         "use_mobile_slider": false,
         "slider_page_dots": false,
@@ -228,9 +250,9 @@
         "hide_desktop": false,
         "hide_tablet": false,
         "hide_mobile": false,
-        "container_size": "large",
+        "container_size": "tiny",
         "min_height": "100%",
-        "padding": "100px 0px",
+        "padding": "1px 1px",
         "padding_mobile_new": "40px 60px",
         "margin": "0px 0px",
         "text_color": "",
@@ -249,6 +271,7 @@
       "blocks": {
         "custom-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/disrupt_the_norm.png",
             "bg_position": "center-center",
@@ -267,10 +290,11 @@
         },
         "custom-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "subheading": "Introducing",
             "title": "Product feature",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>STORM™<br\/>Focus features: <\/p><p>Full disclosure label<br\/>     (no proprietary blends)Neurofactor™ - Increased<br\/>     Brain-Derived Neurotropic Factor (BDNF) productionBrainBerry® -<br\/>     Standardized for high levels of Cyanidin-3-O-glycosides, and clinically<br\/>     validated improved focus and psychomotor speed Astragin® - Absorption<br\/>     enhancement for radical results<\/p><p> <\/p><p><span style=\"text-decoration:underline\">Product Details <\/span><\/p><p><strong>STORM™ Pre-Workout Full Disclosure Label<\/strong> – Our formulas aren’t hidden by proprietary blends,<br\/>which means you get exactly the dose shown on the label, of each active<br\/>ingredient. Formulated by our internal scientists, we proudly showcase the<br\/>clinically proven doses of each active ingredient.  <\/p><p><strong>Neurofactor® 50mg<\/strong> –<br\/>Derived from whole coffee fruit, NeuroFactor® is comprised of a unique profile<br\/>of polyphenols that have been clinically shown to increase levels of a key<br\/>neuroprotein that is vital to learning, memory, and higher thinking. All<br\/>natural and incredibly powerful, clinical data shows it to be capable of<br\/>increasing Brain-Derived Neurotropic Factor by up to 143% in humans.  <\/p><p><strong>BrainBerry® 32.5mg<\/strong> –<br\/>Found naturally within the Aronia berry, this stimulant-free compound has been<br\/>shown to significantly increase focus and reaction time. Unlike most<br\/>ingredients, BrainBerry® is unique in that it is capable of passing the<br\/>blood-brain barrier, which has been shown to increase oxygen uptake within the<br\/>brain. It then adds additional benefits by lowering the activity of the enzyme<br\/>Acetyl Choline Esterase, to maximize neurotransmitter production.  <\/p><p><strong>CDP-Choline 125mg<\/strong> –<br\/>While BrainBerry® is actively working to decrease the activity of Acetyl<br\/>Choline Esterase, the most effective form of Choline is included to guarantee<br\/>your brain has all the Acetyl Choline (a powerful neurotransmitter) it can<br\/>handle.   <\/p><p><strong>Astragin® 25mg<\/strong> – Shown<br\/>to support increased absorption of a wide range of nutrients, this will make<br\/>sure you get absolutely every extra ounce of focus possible.  <\/p><p><strong>L-Tyrosine 500mg<\/strong> –<br\/>One of the ultimate precursors to the most effective focus and energy enhancing<br\/>hormones found in the human body. Directly involved in the creation of<br\/>dopamine, epinephrine, and norepinephrine, this amino-acid will not only boost<br\/>focus but can help fight stress and the fatigue that is commonly associated<br\/>with it.  <\/p><p><strong>Theobromine 50mg<\/strong> – Belonging to a<br\/>class of compounds known as methylxanthines, it supports alertness processes in<br\/>the brain by blocking adenosine activity. Reduce fatigue, increase energy, and<br\/>feel great during the entire experience.<\/p>",
             "text_size": 2,
             "text_columns": 1,
             "align_text": "text-left",

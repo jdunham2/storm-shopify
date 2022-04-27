@@ -38,7 +38,9 @@ https://flickity.metafizzy.co
     max-width: 360px;
     text-align: center;
 }
-
+.footer__social {
+justify-content: center;
+}
 
 .rc-container-wrapper {
   display:none;

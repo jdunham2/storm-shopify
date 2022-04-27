@@ -264,7 +264,7 @@
             "text_color": "text-dark",
             "transparent": true,
             "link_text": "shop supps.",
-            "link": "shopify:\/\/collections\/supps",
+            "link": "shopify:\/\/collections\/all",
             "button_color": "btn--primary",
             "button_style": "hero__btn btn btn--large caps"
           }

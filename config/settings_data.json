@@ -39,7 +39,9 @@
     "show_scroll_top_button": true,
     "enable_product_reviews": true,
     "instagram_link": "https:\/\/www.instagram.com\/storm_lifestyle_",
-    "facebook_link": "https:\/\/www.facebook.com\/",
+    "facebook_link": "https:\/\/www.facebook.com\/stormlifestyles",
+    "twitter_link": "https:\/\/twitter.com\/StormLifestyles",
+    "tiktok_link": "https:\/\/www.tiktok.com\/@storm_lifestyle_",
     "image_hover_enable": true,
     "product_grid_aspect_ratio": 1.1,
     "sale_tags_enable": true,
@@ -48,12 +50,12 @@
     "badge_bg_color": "#ffffff",
     "badge_text_color": "#212121",
     "quickview_enable": true,
-    "favicon": "shopify:\/\/shop_images\/storm-logo.png",
+    "favicon": "shopify:\/\/shop_images\/Storm_Favicon2.jpg",
     "enable_order_notes": false,
     "enable_estimate_shipping": false,
     "show_free_shipping_message": true,
     "message": "Spend ||amount|| for FREE Shipping",
-    "free_shipping_limit": "99",
+    "free_shipping_limit": "75",
     "checkout_logo_image": "shopify:\/\/shop_images\/STORM-FULL_COLOR.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
@@ -161,7 +163,6 @@
           },
           "a467efbc-209d-4ca6-b881-6fccf3c54486": {
             "type": "social",
-            "disabled": true,
             "settings": {
               "title": "",
               "richtext": ""
