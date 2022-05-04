@@ -2,36 +2,77 @@
   "sections": {
     "slideshow": {
       "type": "section-slideshow",
-      "disabled": true,
       "blocks": {
+        "b3621403-0e06-4f32-aa0d-8e2fc111d166": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-bottom",
+            "image": "shopify:\/\/shop_images\/storm-hero-01.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/storm-hero-01-mobile.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-left",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "shop storm.",
+            "link": "shopify:\/\/collections\/all",
+            "button_color": "btn--primary",
+            "button_style": "hero__btn btn btn--input caps"
+          }
+        },
         "slideshow-0": {
           "type": "image",
           "settings": {
             "bg_position": "center-center",
+            "image": "shopify:\/\/shop_images\/storm-hero-03_copy.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/storm-hero-03-mobile.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
-            "title": "Broadcast theme",
-            "description": "A full featured Shopify theme built for modern commerce",
-            "flex_align": "align--middle-center",
+            "title": "",
+            "description": "",
+            "flex_align": "align--bottom-center",
             "text_color": "text-light",
             "transparent": true,
-            "link_text": "View products",
-            "link": "",
-            "button_color": "btn--white",
-            "button_style": "hero__btn btn btn--large btn--outline caps"
+            "link_text": "SHOP PRE-WORKOUT.",
+            "link": "shopify:\/\/products\/pre-workout",
+            "button_color": "btn--primary",
+            "button_style": "hero__btn btn btn--input caps"
+          }
+        },
+        "5592a2b8-fad8-4868-a298-480e19276ceb": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "image": "shopify:\/\/shop_images\/storm-hero-02.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/storm-hero-02-mobile.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-right",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "Get Focus.",
+            "link": "shopify:\/\/products\/focus",
+            "button_color": "btn--primary",
+            "button_style": "hero__btn btn btn--input caps"
           }
         }
       },
       "block_order": [
-        "slideshow-0"
+        "b3621403-0e06-4f32-aa0d-8e2fc111d166",
+        "slideshow-0",
+        "5592a2b8-fad8-4868-a298-480e19276ceb"
       ],
       "settings": {
         "height": "screen-height-two-thirds",
         "transition": "slide",
-        "arrows_style": false,
+        "arrows_style": true,
         "dots_style": "line",
-        "autoplay": false,
-        "autoplay_speed": 8
+        "autoplay": true,
+        "autoplay_speed": 7
       }
     },
     "1631488229db0b6bb2": {
@@ -58,6 +99,7 @@
     },
     "16334572562dbfa862": {
       "type": "section-grid-image-text",
+      "disabled": true,
       "blocks": {
         "ab43e4b9-1b84-4c3f-882d-181bd81416cd": {
           "type": "image_with_text",
@@ -254,7 +296,7 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/product_e1ccfc7c-6ac1-4fcf-abc0-0ba3521fa17d.png",
+            "image": "shopify:\/\/shop_images\/STORM-product_copy.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 0,
             "overlay_color": "#9ddaea",
@@ -264,7 +306,7 @@
             "text_color": "text-dark",
             "transparent": true,
             "link_text": "shop supps.",
-            "link": "shopify:\/\/collections\/all",
+            "image_link": "",
             "button_color": "btn--primary",
             "button_style": "hero__btn btn btn--large caps"
           }
@@ -272,8 +314,8 @@
         "f6e1c790-6ff9-4ab7-8523-7369a68e2711": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/apparel.png",
-            "bg_position": "center-center",
+            "image": "shopify:\/\/shop_images\/STORM-APPAREL_copy.jpg",
+            "bg_position": "center-bottom",
             "overlay_opacity": 0,
             "overlay_color": "#9ddaea",
             "title": "",
@@ -282,7 +324,7 @@
             "text_color": "text-light",
             "transparent": true,
             "link_text": "shop apparel.",
-            "link": "shopify:\/\/collections\/apparel",
+            "image_link": "",
             "button_color": "btn--primary",
             "button_style": "hero__btn btn btn--large caps"
           }
@@ -377,10 +419,10 @@
             "flex_align": "align--middle-center",
             "text_color": "text-light",
             "transparent": true,
-            "link_text": "",
-            "link": "\/collections\/all",
+            "link_text": "shop gear.",
+            "image_link": "",
             "button_color": "btn--white",
-            "button_style": "hero__btn btn btn--large btn--outline caps"
+            "button_style": "caps--large"
           }
         },
         "product": {
@@ -434,6 +476,26 @@
         "title": "Shop the look",
         "section_bg": "#fafafa",
         "dot_color": "#ffffff"
+      }
+    },
+    "1651422139ec53b5cb": {
+      "type": "apps",
+      "blocks": {
+        "e1cc7368-43cd-4acb-956d-9234d833c982": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_font": "helvetica_n4",
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": "<h2 class=\"grid__heading text-center\">@storm_lifestyle_<\/h2>"
+          }
+        }
+      },
+      "block_order": [
+        "e1cc7368-43cd-4acb-956d-9234d833c982"
+      ],
+      "settings": {
+        "include_margins": false
       }
     },
     "16334305542cb6aec3": {
@@ -490,7 +552,7 @@
         "min_height": "100%",
         "padding": "10em 0px",
         "padding_mobile_new": "4em 0px",
-        "margin": "0px 0px",
+        "margin": "40px 0px 0px",
         "text_color": "",
         "background_color": "",
         "background_image": "shopify:\/\/shop_images\/break-the-rules-bg.png",
@@ -602,6 +664,7 @@
     "featured-collection",
     "product-with-image",
     "lookbook",
+    "1651422139ec53b5cb",
     "16334305542cb6aec3",
     "newsletter",
     "1633431028cbeadc8f",

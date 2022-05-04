@@ -146,6 +146,16 @@
   {% if template.directory == 'customers' or settings.enable_cart_dropdown or template contains 'cart' %}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
   {% endif %}
+  <!-- Global site tag (gtag.js) - Google Ads: 10893962978 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10893962978"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-10893962978');
+  </script>
+
 
   <!-- Theme Javascript ============================================================== -->
   <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
