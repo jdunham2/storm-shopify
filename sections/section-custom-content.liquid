@@ -49,54 +49,45 @@
         {% case block.type %}
             {% when 'image' %}
                 {% liquid
-          assign transparency_class = ''
-          if block.settings.transparent
-            assign transparency_class = 'hero__content--transparent'
-          endif
-          assign overlay_opacity = block.settings.overlay_opacity | times: 0.01
-        -%}
-                {%- if block.settings.link != blank -%}
-                    <a href="{{ block.settings.link }}" class="hero__content__link">
-                    {%- endif -%}
-                    <div class="brick__block" data-overflow-frame {{ block.shopify_attributes }}>
-                        <div class="brick__block__image wide-image js-overflow-container {{ block.settings.text_color }}">
-                            <div class="hero__content__wrapper {{ block.settings.flex_align }} {{ transparency_class }}">
-                                <div class="hero__content" data-overflow-content>
-                                    {%- unless block.settings.title == '' -%}
-                                        <h1 class="hero__title" data-aos="hero" data-aos-anchor="{{ animation_anchor }}" data-aos-order="1">{{ block.settings.title | escape }}</h1>
-                                    {%- endunless -%}
+                  assign transparency_class = ''
+                  if block.settings.transparent
+                    assign transparency_class = 'hero__content--transparent'
+                  endif
+                  assign overlay_opacity = block.settings.overlay_opacity | times: 0.01
+                -%}
+              <div class="brick__block" data-overflow-frame {{ block.shopify_attributes }}>
+                  <div class="brick__block__image wide-image js-overflow-container {{ block.settings.text_color }}">
+                      <div class="hero__content__wrapper {{ block.settings.flex_align }} {{ transparency_class }}">
+                          <div class="hero__content" data-overflow-content>
+                              {%- unless block.settings.title == '' -%}
+                                  <h1 class="hero__title" data-aos="hero" data-aos-anchor="{{ animation_anchor }}" data-aos-order="1">{{ block.settings.title | escape }}</h1>
+                              {%- endunless -%}
 
-                                    {%- unless block.settings.description == '' -%}
-                                        <p class="hero__description h5--body" data-aos="hero" data-aos-anchor="{{ animation_anchor }}" data-aos-order="2">
-                                            {{ block.settings.description }}
-                                        </p>
-                                    {%- endunless -%}
+                              {%- unless block.settings.description == '' -%}
+                                  <p class="hero__description h5--body" data-aos="hero" data-aos-anchor="{{ animation_anchor }}" data-aos-order="2">
+                                      {{ block.settings.description }}
+                                  </p>
+                              {%- endunless -%}
 
-                                    {%- if block.settings.link_text != '' -%}
-                                        <a class="{{ block.settings.button_style }} {{ block.settings.button_color }}" href="{{ block.settings.link }}" data-aos="hero" data-aos-anchor="{{ animation_anchor }}" data-aos-order="3">
-                                            {{ block.settings.link_text | escape }}
-                                        </a>
-                                    {%- endif -%}
-                                </div>
+                              <!-- JOD - requested to make the entire block clickable -->
+                              {%- if block.settings.image_link != nil -%}
+                                  <a href="{{ block.settings.image_link }}" class="hero__content__link jeshua"></a>
+                              {%- endif -%}
 
-                                {%- if block.settings.link != blank -%}
-                                    {%- unless block.settings.link_text != blank -%}
-                                        <a href="{{ block.settings.link }}" class="hero__content__link">&nbsp;</a>
-                                    {%- endunless -%}
-                                {%- endif -%}
-                            </div>
-                            <a href="{%- if block.settings.link != blank -%}{{ block.settings.link }}{%- else -%}{%- endif -%}">
+                              {%- if block.settings.link_text != '' -%}
+                                  <a class="{{ block.settings.button_style }} {{ block.settings.button_color }}" href="{{ block.settings.image_link }}" data-aos="hero" data-aos-anchor="{{ animation_anchor }}" data-aos-order="3">
+                                      {{ block.settings.link_text | escape }}
+                                  </a>
+                              {%- endif -%}
+                          </div>
 
-                                <div class="image-overlay" style="background-color:{{ block.settings.overlay_color }} !important; opacity:{{ overlay_opacity }};"></div>
+                      </div>
+                      <div class="image-overlay" style="background-color:{{ block.settings.overlay_color }} !important; opacity:{{ overlay_opacity }};"></div>
 
-                                {%- render 'image-background', img_object: block.settings.image, frame_height_class: section.settings.height, bg_position: block.settings.bg_position -%}
+                      {%- render 'image-background', img_object: block.settings.image, frame_height_class: section.settings.height, bg_position: block.settings.bg_position -%}
 
-                            </a>
-                        </div>
-                    </div>
-                    {%- if block.settings.link != blank -%}
-                    </a>
-                {%- endif -%}
+                  </div>
+              </div>
             {% when 'text' %}
                 <div class="brick__block" data-prevent-transparent-header {{ block.shopify_attributes }}>
                     <div class="brick__block__text {{ block.settings.text_color }}" data-overflow-frame style="background-color: {{ block.settings.bg_color }};">
@@ -443,7 +434,7 @@
                     "info": "Leave blank to link entire image"
                 }, {
                     "type": "url",
-                    "id": "link",
+                    "id": "image_link",
                     "label": "Link"
                 }, {
                     "type": "select",
