@@ -3,6 +3,25 @@
     "slideshow": {
       "type": "section-slideshow",
       "blocks": {
+        "ac7bc0b3-1cb0-462f-895c-8d6557ae7bf6": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "image": "shopify:\/\/shop_images\/IMG_0827.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/IMG_1571.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--bottom-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "SHOP & SAVE NOW >",
+            "link": "shopify:\/\/collections\/all",
+            "button_color": "btn--primary",
+            "button_style": "hero__btn btn btn--input caps"
+          }
+        },
         "b3621403-0e06-4f32-aa0d-8e2fc111d166": {
           "type": "image",
           "settings": {
@@ -62,6 +81,7 @@
         }
       },
       "block_order": [
+        "ac7bc0b3-1cb0-462f-895c-8d6557ae7bf6",
         "b3621403-0e06-4f32-aa0d-8e2fc111d166",
         "slideshow-0",
         "5592a2b8-fad8-4868-a298-480e19276ceb"
@@ -306,7 +326,7 @@
             "text_color": "text-dark",
             "transparent": true,
             "link_text": "shop supps.",
-            "image_link": "",
+            "image_link": "shopify:\/\/collections\/supps",
             "button_color": "btn--primary",
             "button_style": "hero__btn btn btn--large caps"
           }
@@ -324,7 +344,7 @@
             "text_color": "text-light",
             "transparent": true,
             "link_text": "shop apparel.",
-            "image_link": "",
+            "image_link": "shopify:\/\/collections\/apparel",
             "button_color": "btn--primary",
             "button_style": "hero__btn btn btn--large caps"
           }

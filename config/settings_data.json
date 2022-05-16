@@ -92,6 +92,18 @@
       "announcement": {
         "type": "announcement",
         "blocks": {
+          "63a05bc4-de20-45c0-97c6-422790496f8e": {
+            "type": "text",
+            "settings": {
+              "text": "<p><strong>SAVE 30% OFF<\/strong> Sitewide | code: <strong>STORM30<\/strong><\/p>",
+              "target_url_enabled": false,
+              "target_url": "",
+              "target_referrer_enabled": false,
+              "target_referrer": "",
+              "target_device_enabled": false,
+              "target_device": "mobile"
+            }
+          },
           "20d2b21f-5645-4d2e-b519-6700092dd130": {
             "type": "message",
             "settings": {
@@ -131,6 +143,7 @@
           }
         },
         "block_order": [
+          "63a05bc4-de20-45c0-97c6-422790496f8e",
           "20d2b21f-5645-4d2e-b519-6700092dd130",
           "c4c2c404-1ad4-4ed3-baee-62421a67db6f",
           "14889516-f0cd-4a9f-9e34-6d25d207554c"

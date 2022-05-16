@@ -1,7 +1,17 @@
 <!doctype html>
 <html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
     <head>
-        <meta charset="UTF-8">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KL5RR9RZ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KL5RR9RZ3T');
+</script>  
+      
+      <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta name="theme-color" content="{{ settings.accent_secondary }}">
         <link rel="canonical" href="{{ canonical_url }}">
@@ -165,6 +175,16 @@
   <!-- Shopify app scripts =========================================================== -->
 
   {{ content_for_header }}
+      
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S31FHR8S4M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S31FHR8S4M');
+</script>
 </head>
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}{% if customer %} customer-logged-in{% endif %}{% if settings.show_button_animation %} show-button-animation{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}" data-animations="{{ settings.animations_enable }}">
 
@@ -240,5 +260,4 @@
   <!-- And above this comment line ================================================== -->
 </body>
 </html>
-    </head>
-</html>
+
