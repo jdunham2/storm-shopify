@@ -25,25 +25,29 @@
 
 /* @font-face {
     font-family: "ITC Avant Garde Gothic Pro Demi";
-    src: url({{ "ITCAvantGardePro-Demi" | asset_url }}) format("otf");
+    src: url(
+{{ "ITCAvantGardePro-Demi" | asset_url }}) format("otf");
 } */
 
 /** ============================================================================
     custom per theme
 ============================================================================ **/
+/* this is recommended from lazysizes used on this theme */
+img[data-sizes="auto"] { display: block; width: 100%; }
+
 div.product-description.rte p span, p, .p {
   line-height:1.2rem!important;
     margin: 0.5em 0 1.5em !important;
 }
-  
+
 .footer__logo {
     padding-top: 95px;
 }
-  
+
 .footer__social.unstyled.inline-list {
   justify-content: center;
 }
-  
+
 .site-footer {
     text-align: center;
 }

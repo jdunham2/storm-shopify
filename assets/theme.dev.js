@@ -2555,6 +2555,9 @@
           bubbles: false,
         })
       );
+      document.dispatchEvent(
+        new CustomEvent('jod:theme:cartDrawer:open')
+      );
 
       document.dispatchEvent(new CustomEvent('theme:scroll:lock', {bubbles: true, detail: this.cartDropdown}));
       document.dispatchEvent(new CustomEvent('theme:scroll:lock', {bubbles: true, detail: this.cartDropdownBody}));
