@@ -7,10 +7,10 @@
           "type": "image",
           "settings": {
             "bg_position": "center-center",
-            "image": "shopify:\/\/shop_images\/IMG_0827.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/IMG_1571.jpg",
+            "image": "shopify:\/\/shop_images\/IMG_1176.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/IMG_1177.jpg",
             "overlay_opacity": 0,
-            "overlay_color": "#000",
+            "overlay_color": "#000000",
             "title": "",
             "description": "",
             "flex_align": "align--bottom-center",

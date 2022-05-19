@@ -65,41 +65,47 @@
     },
     "about": {
       "type": "section-accordion",
-      "disabled": true,
       "blocks": {
         "fb81828c-87e8-4a15-bc19-9589e878d5e9": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "STORM™ Pre-Workout Full Disclosure Label ",
+            "text": "<p>Our formulas aren’t hidden by proprietary blends, which means you get exactly the dose shown on the label, of each active ingredient. Formulated by our internal scientists, we proudly showcase the clinically proven doses of each active ingredient.<\/p>"
           }
         },
         "dd9d095e-b094-44f0-a0c2-77bad0ec3615": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "{{ product.metafields.storm.ingredient_1.value }}",
+            "text": "<p>{{ product.metafields.storm.ingredient_1_description | metafield_tag }}<\/p>"
           }
         },
         "7f13f7de-8971-4956-af1a-dff209280969": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "{{ product.metafields.storm.ingredient_2.value }}",
+            "text": "<p>{{ product.metafields.storm.ingredient_2_description | metafield_tag }}<\/p>"
           }
         },
         "63d83736-e1d3-45fa-bd0b-b3062f96a2ff": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "{{ product.metafields.storm.ingredient_3.value }}",
+            "text": "<p>{{ product.metafields.storm.ingredient_3_description | metafield_tag }}<\/p>"
           }
         },
         "ad4a5328-98ca-4d83-ad6f-94d40f8748f8": {
           "type": "text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this to answer some common questions you hear from your customers. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your products. This section will appear across all products.<\/p>"
+            "title": "{{ product.metafields.storm.ingredient_4.value }}",
+            "text": "<p>{{ product.metafields.storm.ingredient_4_description | metafield_tag }}<\/p>"
+          }
+        },
+        "91033005-e928-4b54-819a-e475cdb98c2a": {
+          "type": "text",
+          "settings": {
+            "title": "{{ product.metafields.storm.ingredient_5.value }}",
+            "text": "<p>{{ product.metafields.storm.ingredient_5_description | metafield_tag }}<\/p>"
           }
         }
       },
@@ -108,7 +114,8 @@
         "dd9d095e-b094-44f0-a0c2-77bad0ec3615",
         "7f13f7de-8971-4956-af1a-dff209280969",
         "63d83736-e1d3-45fa-bd0b-b3062f96a2ff",
-        "ad4a5328-98ca-4d83-ad6f-94d40f8748f8"
+        "ad4a5328-98ca-4d83-ad6f-94d40f8748f8",
+        "91033005-e928-4b54-819a-e475cdb98c2a"
       ],
       "settings": {
         "title": "Ingredient Highlights"

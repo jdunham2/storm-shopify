@@ -95,7 +95,7 @@
           "63a05bc4-de20-45c0-97c6-422790496f8e": {
             "type": "text",
             "settings": {
-              "text": "<p><strong>SAVE 30% OFF<\/strong> Sitewide | code: <strong>STORM30<\/strong><\/p>",
+              "text": "<p><strong>SAVE AN ADDITIONAL 20% OFF<\/strong> Sitewide | code: <strong>STORM20<\/strong><\/p>",
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
@@ -131,6 +131,7 @@
           },
           "14889516-f0cd-4a9f-9e34-6d25d207554c": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "text": "<p><strong>Introducing Your New Pre<\/strong> | <a href=\"\/products\/pre-workout\" title=\"Pre-Workout\">More Info<\/a><\/p>",
               "target_url_enabled": false,
